@@ -4,7 +4,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import GenericUtility.Base_Class;
-@Listeners(GenericUtility.ListnersClass.class)
+@Listeners(GenericUtility.ListnerImplementationClass.class)
 public class LoginLogout extends Base_Class{
 @Test(groups = "smoke")
 	public void Demo()

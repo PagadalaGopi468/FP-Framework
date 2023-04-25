@@ -19,46 +19,48 @@ public class Base_Class {
 	PropertyFile p=new PropertyFile();
 	WebDriverUtility w=new WebDriverUtility();
 
-	
-	public static WebDriver driver;
-	
+	public WebDriver driver;
+	public static WebDriver sdriver;
+
 	@BeforeSuite(groups = {"smoke","Regression"})
 	public void Launch_Database()
 	{
 		System.out.println("Database launch Successfully..!!!");
-		
+
 	}
 	//@Parameters("browser")
 	//@BeforeTest
 	@BeforeClass(groups = {"smoke","Regression"})
 	public void Launch_Browser(/*String Browser*/) throws Exception
 	{
-	    String Browser=p.ReaddataFromProperty("Browser")/*e.ReadDataFromExcel("Sheet1",0,1)*/;
+		String Browser=p.ReaddataFromProperty("Browser")/*e.ReadDataFromExcel("Sheet1",0,1)*/;
 		if(Browser.equalsIgnoreCase("Chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "D:\\Eclipse\\chromedriver.exe");
 			driver=new ChromeDriver();
+			sdriver=driver;
 			System.out.println("Chromedriver launch Successfully..!!!");
 		}
 		else if(Browser.equalsIgnoreCase("Edge"))
-			
+
 		{
-			System.setProperty("webdriver.edge.driver", "D:\\Eclipse\\msedgedriver.exe");
-		    driver=new EdgeDriver();
+			System.setProperty("webdriver.edge.driver", "D:\\Development TFS Project\\msedgedriver.exe");	
+			driver=new EdgeDriver();
+			sdriver=driver;
 			System.out.println("Edgedriver launch Successfully..!!!");
 		}
 		driver.get(p.ReaddataFromProperty("URL"));
 		w.waitForLoadPage(driver);
 		w.maximize(driver);
 	}
-	
+
 	@BeforeMethod(groups = {"smoke","Regression"})
 	public void Login() throws Exception
 	{
 		FPLoginPage f=new FPLoginPage(driver);
 		f.Login(p.ReaddataFromProperty("Username"), p.ReaddataFromProperty("Password"));
 	}
-	
+
 	@AfterMethod(groups = {"smoke","Regression"})
 	public void Logout()
 	{
@@ -71,12 +73,12 @@ public class Base_Class {
 	{
 		driver.close();
 	}
-	
-    @AfterSuite(groups = {"smoke","Regression"})
+
+	@AfterSuite(groups = {"smoke","Regression"})
 	public void Close_Database()
 	{
 		System.out.println("Database close Successfully....!!!");
 	}
-    
-	
+
+
 }

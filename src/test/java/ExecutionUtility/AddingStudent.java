@@ -23,6 +23,13 @@ public class AddingStudent extends Base_Class{
 	     r.keyPress(KeyEvent.VK_MINUS);
 	     r.keyRelease(KeyEvent.VK_CONTROL);
 	     r.keyRelease(KeyEvent.VK_MINUS);
+	     
+	     r.keyPress(KeyEvent.VK_CONTROL);
+	     r.keyPress(KeyEvent.VK_MINUS);
+	     r.keyRelease(KeyEvent.VK_CONTROL);
+	     r.keyRelease(KeyEvent.VK_MINUS);
+	     
+	     Thread.sleep(2000);
 		AddNewStudentPage a=new AddNewStudentPage(driver);
 		a.Student("npg@gmail.com", "sahasra", "ravali");
 		System.out.println("Student added Successfully...!!!");

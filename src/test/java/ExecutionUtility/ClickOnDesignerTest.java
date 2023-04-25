@@ -17,6 +17,6 @@ public class ClickOnDesignerTest extends Base_Class{
 	@Test
 	public void DemoTest()
 	{
-		System.out.println("passed");
+		System.out.println("Sample");
 	}
 }

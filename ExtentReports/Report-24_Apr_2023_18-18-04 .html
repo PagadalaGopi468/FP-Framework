@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>ExtentReports for Demo</title>
+<title>ExtentReports</title>
 <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
@@ -32,10 +32,10 @@
 </ul>
 <ul class="nav-right">
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Focal point report</span></a>
+<a href="#"><span class="badge badge-primary">FocalPoint Execution Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">2023-04-14 15:26:46.134.134.134</span></a>
+<a href="#"><span class="badge badge-primary">Apr 24, 2023 06:18:04 PM</span></a>
 </li>
 </ul>
 </div>
@@ -79,14 +79,14 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Test</p>
+            <p class="name">Student</p>
             <p class="text-sm">
-              <span>3:26:57 PM</span> / <span>00:00:12:166</span>
+              <span>6:18:19 PM</span> / <span>00:00:10:285</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -94,17 +94,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Test</h5>
-<span class='badge badge-success'>04.14.2023 3:26:57 PM</span>
-<span class='badge badge-danger'>04.14.2023 3:27:09 PM</span>
-<span class='badge badge-default'>00:00:12:166</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<h5 class="test-status text-fail">Student</h5>
+<span class='badge badge-success'>04.24.2023 6:18:19 PM</span>
+<span class='badge badge-danger'>04.24.2023 6:18:29 PM</span>
+<span class='badge badge-default'>00:00:10:285</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\Eclipse\FocalPoint\.\src\test\resources\ScreenShots Test 14_Apr_2023_15-27-09.png' src="D:\Eclipse\FocalPoint\.\src\test\resources\ScreenShots Test 14_Apr_2023_15-27-09.png">
+<img data-featherlight='D:\Eclipse\FocalPoint\.\src\test\resources\ScreenShots Student 24_Apr_2023_18-18-29.png' src="D:\Eclipse\FocalPoint\.\src\test\resources\ScreenShots Student 24_Apr_2023_18-18-29.png">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -113,31 +113,31 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:26:57 PM</td>
+        <td>6:18:19 PM</td>
         <td>
-          Test Script is Started..!!! Test
+          Test Execution Started..!!! Student
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:18:29 PM</td>
+        <td>
+          Test Script Failed..!!! Student
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:27:09 PM</td>
+        <td>6:18:29 PM</td>
         <td>
-          Test Script is failed..!!! Test
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:27:09 PM</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <mat-icon _ngcontent-lku-c375="" role="img" mattooltip="Continue" class="mat-icon notranslate mat-tooltip-trigger material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" aria-describedby="cdk-describedby-message-5" cdk-describedby-host="0">...</mat-icon> is not clickable at point (1294, 57). Other element would receive the click: <div class="ng-tns-c100-150 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-success" toast-component="" style="opacity: 1;">...</div>
-  (Session info: chrome=112.0.5615.87)
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Administration']"}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.3', revision: 'e5e76298c3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d597f065088482903ba8833094f702d5, clickElement {id=f010ce69-1acf-4571-9930-2874f5265378}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Varma\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52584}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52584/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d597f065088482903ba8833094f702d5)] -> xpath: //mat-icon[normalize-space()='arrow_forward']]
-Session ID: d597f065088482903ba8833094f702d5
+Command: [5553e5817f50b41defed1f5572a9df05, findElement {using=xpath, value=//span[text()='Administration']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Varma\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58864/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5553e5817f50b41defed1f5572a9df05
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -150,16 +150,15 @@ Session ID: d597f065088482903ba8833094f702d5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
-	at GenericUtility.AddTestPage.test(AddTestPage.java:167)
-	at ExecutionUtility.ConductTest.Test(ConductTest.java:31)
+	at GenericUtility.AddNewStudentPage.Student(AddNewStudentPage.java:73)
+	at ExecutionUtility.AddingStudent.Student(AddingStudent.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -176,18 +175,13 @@ Session ID: d597f065088482903ba8833094f702d5
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 </textarea>
           
         </td>
@@ -219,12 +213,12 @@ Session ID: d597f065088482903ba8833094f702d5
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -238,9 +232,9 @@ Session ID: d597f065088482903ba8833094f702d5
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:26:57 PM</td>
+<td>18:18:19 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>Test</a>
+<a href="#" class="linked" test-id='2' id='2'>Student</a>
 </td>
 </tr>
 </tbody>
@@ -260,13 +254,13 @@ Session ID: d597f065088482903ba8833094f702d5
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>2023-04-14 15:26:46.134.134.134</h3>
+<h3>Apr 24, 2023 06:18:04 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>2023-04-14 15:27:10.869.869.869</h3>
+<h3>Apr 24, 2023 06:18:48 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -317,9 +311,9 @@ Session ID: d597f065088482903ba8833094f702d5
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='33%'><b>1</b> events passed</small></div>
 <div>
-<small data-tooltip='66%'><b>2</b> events failed,
+<small data-tooltip='33%'><b>1</b> events failed,
 <b data-tooltip='%'>1</b> others
 </small>
 </div>
@@ -336,7 +330,7 @@ Session ID: d597f065088482903ba8833094f702d5
 </div></div>
 <script>
 var timeline = {
-"Test":12.166
+"Student":10.285
 };
 </script>
 <div class="row">
@@ -348,19 +342,19 @@ var timeline = {
 <tbody>
 <tr>
 <td>Browser</td>
-<td>chrome</td>
+<td>Chrome</td>
 </tr>
 <tr>
-<td>OS</td>
-<td>windows</td>
+<td>System OS</td>
+<td>Windows</td>
+</tr>
+<tr>
+<td>Base URL</td>
+<td>https://me3.backpack.education/</td>
 </tr>
 <tr>
 <td>Author</td>
 <td>Gopi</td>
-</tr>
-<tr>
-<td>Environment</td>
-<td>QA</td>
 </tr>
 </tbody>
 </table></div>
@@ -388,8 +382,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 2,
+passEvents: 1,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 1

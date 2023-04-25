@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="6" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="6" parallel="tests" name="Test1(failed)">
     <classes>
-      <class name="ExecutionUtility.ConductTest">
+      <class name="ExecutionUtility.AddingStudent">
         <methods>
           <include name="Launch_Browser"/>
           <include name="Launch_Database"/>
@@ -11,9 +11,9 @@
           <include name="Logout"/>
           <include name="Login"/>
           <include name="Close_Browser"/>
-          <include name="Test"/>
+          <include name="Student"/>
         </methods>
-      </class> <!-- ExecutionUtility.ConductTest -->
+      </class> <!-- ExecutionUtility.AddingStudent -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
