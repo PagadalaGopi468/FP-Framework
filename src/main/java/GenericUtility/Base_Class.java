@@ -28,12 +28,12 @@ public class Base_Class {
 		System.out.println("Database launch Successfully..!!!");
 
 	}
-	//@Parameters("browser")
+	@Parameters("browser")
 	//@BeforeTest
 	@BeforeClass(groups = {"smoke","Regression"})
-	public void Launch_Browser(/*String Browser*/) throws Exception
+	public void Launch_Browser(String Browser) throws Exception
 	{
-		String Browser=p.ReaddataFromProperty("Browser")/*e.ReadDataFromExcel("Sheet1",0,1)*/;
+		//String Browser=p.ReaddataFromProperty("Browser")/*e.ReadDataFromExcel("Sheet1",0,1)*/;
 		if(Browser.equalsIgnoreCase("Chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "D:\\Eclipse\\chromedriver.exe");
