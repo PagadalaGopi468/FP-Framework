@@ -5,7 +5,7 @@ public class InstanceUtility {
 
 	public String PropertyFilePath()
 	{
-	String PropertyFilePath=".\\src\\test\\resources\\LoginData\\Login.properties";
+	String PropertyFilePath=".\\src\\test\\resources\\Login.properties";
 	return PropertyFilePath;
 	}
 	public String ExcelPath()
